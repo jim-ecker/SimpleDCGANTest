@@ -2,6 +2,8 @@
 
 This repository contains a PyTorch implementation of a Generative Adversarial Network (GAN) for image synthesis. The GAN consists of a generator and a discriminator, and it can be trained on various datasets, such as CIFAR-10, LSUN, MNIST, and ImageNet.
 
+### I use this script to test out new hardware configurations for my AI/ML development rig
+
 ## Dependencies
 
 - Python 3
