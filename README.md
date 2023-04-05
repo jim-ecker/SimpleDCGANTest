@@ -13,22 +13,6 @@ This repository contains a PyTorch implementation of a Generative Adversarial Ne
 
 ## Installation:
 
-1. Create a virtual environment (optional, but recommended):
-
-  ```bash
-  python -m venv venv
-  source venv/bin/activate # On Windows, use: venv\Scripts\activate
-  ```
-  
-2. Install the required packages using `requirements.txt`:
-  ```bash
-  pip install -r requirements.txt
-  ```
-
-3. After completing the installation, proceed with the [Usage](#usage) section.
-
-## Usage
-
 1. Clone the repository:
 
 ```bash
@@ -36,7 +20,23 @@ git clone https://github.com/jim-ecker/SimpleDCGANTest.git
 cd SimpleDCGANTest
 ```
 
-2. Train the GAN on a dataset of your choice:
+2. Create a virtual environment (optional, but recommended):
+
+  ```bash
+  python -m venv venv
+  source venv/bin/activate # On Windows, use: venv\Scripts\activate
+  ```
+  
+3. Install the required packages using `requirements.txt`:
+  ```bash
+  pip install -r requirements.txt
+  ```
+
+4. After completing the installation, proceed with the [Usage](#usage) section.
+
+## Usage
+
+1. Train the GAN on a dataset of your choice:
 
 ```bash
 python main.py --dataset <dataset> --dataroot <path_to_dataset>
@@ -56,7 +56,7 @@ Similarly, if you are running on a Metal enabled Apple Silicon Mac, you can use 
 python main.py --dataset <dataset> --dataroot <path_to_dataset> --mps
 ```
 
-3. Check the `./output` folder for generated images and model checkpoints.
+2. Check the `./output` folder for generated images and model checkpoints.
 
 ## Command-line Arguments
 
@@ -82,28 +82,6 @@ The following command-line arguments can be used to customize the training proce
 - `--manualSeed`: Manual seed for random number generation
 - `--classes`: Comma-separated list of classes for the LSUN dataset (default: 'bedroom')
 - `--mps`: Enables macOS GPU training (default: False)
-
-## Example
-
-To train a model using the CIFAR10 dataset, you can run the following command:
-
-```bash 
-python main.py --dataset cifar10 --dataroot <path_to_dataset> --outf <output_folder>
-```
-
-Replace `<path_to_dataset>` with the actual path to the CIFAR10 dataset folder and `<output_folder>` with the folder you want the output images and model checkpoints to be saved.
-
-If you are running this on a CUDA enabled device, such as an Nvidia GPU you can use the `--cuda` flag
-
-```bash
-python main.py --dataset cifar10 --dataroot <path_to_dataset> --outf <output_folder> --cuda
-```
-
-Similarly, if you are running on a Metal enabled Apple Silicon (M1 or M2, etc) Mac, you can use the `--mps` flag
-
-```bash
-python main.py --dataset cifar10 --dataroot <path_to_dataset> --outf <output_folder> --mps
-```
 
 ## Outputs
 
