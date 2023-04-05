@@ -44,6 +44,18 @@ python main.py --dataset <dataset> --dataroot <path_to_dataset>
 
 Replace `<dataset>` with one of the supported datasets (`cifar10`, `lsun`, `mnist`, `imagenet`, `folder`, `lfw`, `fake`) and `<path_to_dataset>` with the path to the dataset on your machine.
 
+If you have a CUDA device on your system such as an Nvidia GPU, you can add the `--cuda` flag to the arguments
+
+```bash
+python main.py --dataset <dataset> --dataroot <path_to_dataset> --cuda
+```
+
+Similarly, if you are running on a Metal enabled Apple Silicon Mac, you can use the `--mps` flag
+
+```bash
+
+```
+
 3. Check the `./output` folder for generated images and model checkpoints.
 
 ## Command-line Arguments
@@ -78,7 +90,20 @@ To train a model using the CIFAR10 dataset, you can run the following command:
 ```bash 
 python main.py --dataset cifar10 --dataroot <path_to_dataset> --outf <output_folder>
 ```
+
 Replace `<path_to_dataset>` with the actual path to the CIFAR10 dataset folder and `<output_folder>` with the folder you want the output images and model checkpoints to be saved.
+
+If you are running this on a CUDA enabled device, such as an Nvidia GPU you can use the `--cuda` flag
+
+```bash
+python main.py --dataset cifar10 --dataroot <path_to_dataset> --outf <output_folder> --cuda
+```
+
+Similarly, if you are running on a Metal enabled Apple Silicon (M1 or M2, etc) Mac, you can use the `--mps` flag
+
+```bash
+python main.py --dataset cifar10 --dataroot <path_to_dataset> --outf <output_folder> --mps
+```
 
 ## Outputs
 
