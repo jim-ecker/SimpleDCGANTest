@@ -32,8 +32,8 @@ This repository contains a PyTorch implementation of a Generative Adversarial Ne
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/pytorch-gan.git
-cd pytorch-gan
+git clone https://github.com/jim-ecker/SimpleDCGANTest.git
+cd SimpleDCGANTest
 ```
 
 2. Train the GAN on a dataset of your choice:
