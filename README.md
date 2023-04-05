@@ -53,7 +53,7 @@ python main.py --dataset <dataset> --dataroot <path_to_dataset> --cuda
 Similarly, if you are running on a Metal enabled Apple Silicon Mac, you can use the `--mps` flag
 
 ```bash
-
+python main.py --dataset <dataset> --dataroot <path_to_dataset> --mps
 ```
 
 3. Check the `./output` folder for generated images and model checkpoints.
